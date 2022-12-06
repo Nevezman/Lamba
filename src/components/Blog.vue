@@ -69,6 +69,38 @@
     </div>
     </div>
     </div>
+
+    <div class="blog__winer">
+      <div class="blog__winer_info">
+        
+        <dl>
+          <dd class="blog__winer_turName">Чемпион Am</dd>
+          <dt class="blog__winer_Name">Анджей Левандовски </dt>
+        </dl>
+        <p class="blog__winer_text">«Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, 
+          мне очень приятно делать это в этом году, 
+          потому что уровень соревнований очень высок. Должен сказать, сегодня было довольно легко, 
+          так как я все время контролировал ситуацию».</p>
+         
+         
+        <dl class="blog__winer_inner">
+          <dd class="blog__winer_turName">Обладатель кубка Lamborghini</dd>
+          <dt class="blog__winer_Name">Жерар ван дер Хорст </dt>
+        </dl>
+        <p class="blog__winer_text expand">«Я очень доволен титулом, моей второй победой в Am и четвертой в 
+          Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований 
+          очень высок. Должен Обладатель кубка Lamborghini  добавил: «Здорово выиграть титул, спустя 
+          четыре года после последнего, а за это время произошло так много всего. Из-за COVID-19, а з
+          атем моей тяжелой аварии в Барселоне я не мог так много ездить в последние годы, поэтому я очень 
+          доволен своим возвращением. Сегодня утром была тяжелая гонка, но я справился».
+           сказать, сегодня было довольно легко, так как я все время контролировал ситуацию».</p>
+         
+
+      </div>
+      <div class="blog__winer_foto">
+        <img class="blog__winer_img" src="../assets/Jpg/finner.jpg">
+      </div>
+    </div>
 </template>
 <script>
 
@@ -150,9 +182,11 @@ min-height: 46px;
   
   .large_one {
     height: 350px;
+    transition: 1s;
   }
   .large_two {
     height: 450px;
+    transition: 1s;
   }
   .slide_lable {
     cursor: pointer;
@@ -161,6 +195,42 @@ min-height: 46px;
     
     
   }
+  .blog__winer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    
+  }
+  .blog__winer_turName {
+    color: #9F6B08;
+    font-size: 12px;
+    
+  }
+  .blog__winer_Name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .blog__winer_text {
+    font-style: italic;
+    max-width: 434px;
+    margin-bottom: 30px;
+  }
+  .expand {
+    max-height: 69px;
+    overflow: hidden;
+    transition: 1s;
+  }
+  .expand:hover {
+    max-height: 150px;
+
+  }
+  
+  
+
+
  
   
 </style>
