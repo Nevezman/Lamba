@@ -63,5 +63,10 @@ export default {
     margin-top: auto;
     margin-bottom: 30px;
    }
+   @media (max-width: 950px) {
+    .promo__title {
+        font-size: 60px;
+    }
+   }
 
 </style>

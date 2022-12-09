@@ -40,4 +40,9 @@ export default {
     align-self: flex-end;
     padding-bottom: 55px;
   }
+  @media (max-width: 810px) {
+    .track_img {
+      max-width: 100%;
+    }
+  }
 </style>

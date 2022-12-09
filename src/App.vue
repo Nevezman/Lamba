@@ -27,10 +27,16 @@
       </div>
     </section>
   </main>
+  <footer>
+    <div class="conteiner">
+      <FooterVue/>
+    </div>
+  </footer>
     
   
 </template>
 <script>
+import FooterVue from './components/Footer.vue';
 import BlogVue from './components/Blog.vue';
 import SuperEvoVue from './components/SuperEvo.vue';
 import TrackVue from './components/Track.vue';
@@ -39,7 +45,7 @@ import HeaderVue from './components/Header.vue';
 import PromoVue from './components/Promo.vue';
 export default {
   components:{
-    HeaderVue, PromoVue, InfoVue, TrackVue,SuperEvoVue,BlogVue 
+    HeaderVue, PromoVue, InfoVue, TrackVue,SuperEvoVue,BlogVue, FooterVue
   }
 }
 </script>
@@ -100,4 +106,16 @@ export default {
     
     
   }
+  footer {
+    background-color: #363636;
+    padding: 100px 0 80px;
+    color: #fff;
+  }
+  @media (max-width: 950px){
+    .conteiner {
+      max-width: 740px;
+    }
+  }
+  
+
 </style>

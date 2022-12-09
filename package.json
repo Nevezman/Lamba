@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "swiper": "^8.4.5",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue3-google-map": "^0.15.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",

@@ -148,5 +148,10 @@ export default {
     width: 100%;
 
   }
+  @media (max-width: 960px) {
+    .Info__img { 
+      width: 100%;
+    }
+  }
   
 </style>

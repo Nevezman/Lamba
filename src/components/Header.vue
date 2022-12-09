@@ -66,6 +66,25 @@ export default {
     .menu__left {
         padding-left: 25px;
     }
+    @media (max-width:1050px) {
+        .menu__list {
+            gap: 28px;
+        }
+        .menu__right {
+        padding-right: 80px;
+        }
+        .conteiner{
+            max-width: none;
+        }
+    }
+        @media (max-width: 950px) {
+            .menu__list {
+            gap: 30px;
+
+        }
+        }
+
+        
 
     
 </style>

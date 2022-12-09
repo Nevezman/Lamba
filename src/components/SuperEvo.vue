@@ -193,6 +193,17 @@ color: #fff;
     top: 120px;
 
 }
+@media (max-width: 950px){
+    .superEVo__white_inner::after {
+        display: none;
+    }
+    .superEvo__black_decr-list {
+        gap: 20px;
+    }
+    .superEvo__white_video {
+        background-size: 100%;
+    }
+}
 
 
 </style>

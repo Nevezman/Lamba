@@ -227,6 +227,20 @@ min-height: 46px;
     max-height: 150px;
 
   }
+  @media (max-width: 950px){
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .swipper__arrows {
+   top: 0px;
+   left: 321px;
+  }
+
+    }
   
   
 
