@@ -3,28 +3,29 @@
         <nav class="menu">
             <ul class="menu__list menu__left">
                 <li class="menu__items">
-                    <a class="menu__link" href="#">О гонке</a>
+                    <a class="menu__link" href="#Info_scroll">О гонке</a>
                 </li>
                 <li class="menu__items">
-                    <a class="menu__link" href="#">Трек</a>
+                    <a class="menu__link" href="#track__scroll">Трек</a>
                 </li>
                 <li class="menu__items">
-                    <a class="menu__link" href="#">Lamborghini Super trofeo</a>
+                    <a class="menu__link" href="#superEvo__scroll">Lamborghini Super trofeo</a>
                 </li>
                 <li class="menu__items">
-                    <a class="menu__link" href="#">Новости</a>
+                    <a class="menu__link" href="#blog__scroll">Новости</a>
                 </li>
             </ul>
             <img class="menu__logo_image" src="@/assets/SVG/Logo.svg" alt="Эмблема Ламбы">
             <ul class="menu__list menu__right">
                 <li class="menu__items">
-                    <a class="menu__link" href="#">Купить билеты</a>
+                    <a class="menu__link" href="#buy-billets_scroll">Купить билеты</a>
                 </li>
                 <li class="menu__items">
-                    <a class="menu__link" href="#">Смотреть онлайн</a>
+                    <a class="menu__link" href="#watch_video">Смотреть онлайн</a>
+                    
                 </li>
                 <li class="menu__items">
-                    <a class="menu__link" href="#">Контакты</a>
+                    <a class="menu__link" href="#contacts__scroll">Контакты</a>
                 </li>
                 
             </ul>
@@ -77,12 +78,13 @@ export default {
             max-width: none;
         }
     }
-        @media (max-width: 950px) {
-            .menu__list {
-            gap: 30px;
+    @media (max-width: 950px) {
+        .menu {
+            display: none;
+        }
 
-        }
-        }
+    }
+        
 
         
 

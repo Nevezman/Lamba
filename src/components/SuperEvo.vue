@@ -3,7 +3,7 @@
         <div class="conteiner">
           <div class="superEVo__black_inner">
              <div class="superEvo__black_content">
-               <h3 class="superEvo__black_title">СУПЕР ТРОФЕО ЭВО</h3>
+               <h3 class="superEvo__black_title" id="superEvo__scroll">СУПЕР ТРОФЕО ЭВО</h3>
                 <div class="superEvo__black_wrapper">
                   <p class="superEvo__black_text">Новый Huracán Super Trofeo EVO достигает еще больших 
                 высот, чем его прославленный предшественник, благодаря полностью переработанной аэродинамике. 
@@ -67,7 +67,7 @@
                     для зрителей.</p> 
 
             </div>
-            <div class="superEvo__white_video">
+            <div class="superEvo__white_video" id="watch_video">
                 <a class="superEvo__white_video-arrow" href="#">
                     <img src="../assets/SVG/arcticons_youtube-studio.svg" alt="youtube">
                     <span>смотреть онлайн</span>
@@ -204,6 +204,53 @@ color: #fff;
         background-size: 100%;
     }
 }
+@media (max-width: 760px){
+   
+    .superEvo__black_decr-list {
+        font-size: 12px;
+    }
+    .superEvo__black_img {
+        width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .superEVo__white_inner::before {
+        display: none;
+    }
+}
+@media (max-width: 640px){
+   .superEvo__black_content {
+    display: block;
+   }
+   .superEvo__black_title {
+    margin-bottom: 20px;
+   }
+  
+    
+ }
+ @media (max-width: 480px){
+    .superEVo__black_inner::before {
+        display: none;
+
+    }
+    .superEVo__black_inner::after {
+        display: none;
+
+    }
+    .superEvo__black_decr-list {
+        gap: 10px;
+        font-size: 10px;
+    }
+    .superEvo__white_video {
+        margin: 10px auto;
+    }
+    
+ 
+  
+ }
+
+
+
 
 
 </style>

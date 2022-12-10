@@ -1,7 +1,7 @@
 <template>
     <div class="track__content">
         <div class="track__info">
-            <h3 class="track__title">ТРЕК ПОРТИМАО</h3>
+            <h3 class="track__title" id="track__scroll">ТРЕК ПОРТИМАО</h3>
             <p class="track__text">Autodromo Internacional do Algarve находится в одноименном регионе 
                 на юге Португалии, недалеко от города Портиман. Открытый в октябре 
                 2008 года автогоночный комплекс является одним из самых современных в Европе, 
@@ -45,4 +45,12 @@ export default {
       max-width: 100%;
     }
   }
+  @media (max-width: 640px){
+   .track__content {
+    height: auto;
+   }
+  
+    
+ }
+
 </style>

@@ -68,5 +68,44 @@ export default {
         font-size: 60px;
     }
    }
+   @media (max-width: 750px){
+   
+   .promo__title {
+    font-size: 48px;
+   }
+ }
+ @media (max-width: 640px){
+   
+   .promo__title {
+    font-size: 38px;
+   }
+   .promo__subtitle {
+    
+    font-size: 28px;
+    
+   }
+   .promo__subtitle span {
+    
+    font-size: 20px;
+    
+ }
+}
+@media (max-width: 480px){
+    .promo__title {
+    font-size: 25px;
+   }
+   .promo__subtitle {
+    
+    font-size: 20px;
+    
+   }
+   .promo__subtitle span {
+    
+    font-size: 15px;
+    
+ }
+  
+ }
+
 
 </style>

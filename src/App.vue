@@ -1,8 +1,9 @@
 <template >
   <header>
+    <BuregemenuVue/>
     <HeaderVue/>
   </header>
-  <main class="main">
+  <main class="main" id="page-wrap">
     <section class="promo">
       <div class="conteiner">
         <PromoVue/>
@@ -36,6 +37,7 @@
   
 </template>
 <script>
+import BuregemenuVue from './components/Buregemenu.vue';
 import FooterVue from './components/Footer.vue';
 import BlogVue from './components/Blog.vue';
 import SuperEvoVue from './components/SuperEvo.vue';
@@ -45,7 +47,8 @@ import HeaderVue from './components/Header.vue';
 import PromoVue from './components/Promo.vue';
 export default {
   components:{
-    HeaderVue, PromoVue, InfoVue, TrackVue,SuperEvoVue,BlogVue, FooterVue
+    HeaderVue, PromoVue, InfoVue, TrackVue,SuperEvoVue,BlogVue, FooterVue,BuregemenuVue
+
   }
 }
 </script>
@@ -53,6 +56,7 @@ export default {
 
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   *,
   *::after,
@@ -116,6 +120,24 @@ export default {
       max-width: 740px;
     }
   }
+  @media (max-width: 760px){
+   
+   .conteiner {
+     max-width: 640px;
+   }
+ }
+ @media (max-width: 640px){
+   
+   .conteiner {
+     max-width: 480px;
+   }
+ }
+ @media (max-width: 480px){
+   
+   .conteiner {
+     max-width: 340px;
+   }
+ }
   
 
 </style>

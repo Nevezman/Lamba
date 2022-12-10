@@ -1,8 +1,10 @@
 <template>
     <div class="blog__slider">
-      <h3 class="blog__slider_title">БЛОГ</h3>
+      <h3 class="blog__slider_title" id="blog__scroll">БЛОГ</h3>
+      
       <div class="blog_swiper">
     <swiper
+    :pagination="false"
     :modules="modules"
     :slides-per-view="2"
     :space-between="20"
@@ -10,6 +12,7 @@
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     :loop="true"
+    :breakpoints="swiperOptions.breakpoints"
   > 
   
     <swiper-slide>
@@ -104,13 +107,14 @@
 </template>
 <script>
 
-import { Navigation, } from 'swiper';
+import {  Navigation, Pagination} from 'swiper';
 
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import "swiper/css/pagination";
 
 export default {
   components: {
@@ -127,19 +131,30 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Navigation],
+      modules: [Navigation, Pagination],
       
     };
   },
   data () {
     return {
       isReadOne : false,
-      isReadTwo : false
-    }
-
+      isReadTwo : false,
+      swiperOptions: {
+          breakpoints: {  
+     
+      760: {       
+         slidesPerView: 2,
+         spaceBetween: 20     
+      }, 
+      360: {       
+         pagination:"true",  
+         slidesPerView: 1,
+         spaceBetween: 0     
+      },   
     },
-
- 
+  },        
+    }
+  },
 };
 </script>
 <style>
@@ -241,6 +256,29 @@ min-height: 46px;
   }
 
     }
+    @media (max-width: 760px){
+
+  .swipper__arrows {
+   top: 0px;
+   left: 242px;
+  }
+  .blog__winer_img {
+    width: 100%;
+  }
+  .swipper__arrows {
+    display: none;
+  }
+   
+
+    }
+    @media (max-width: 640px){
+   .blog__winer {
+    display: block;
+   }
+  
+    
+ }
+
   
   
 

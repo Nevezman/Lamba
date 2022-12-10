@@ -153,5 +153,21 @@ export default {
       width: 100%;
     }
   }
+  @media (max-width: 750px){
+   
+   .Info__content {
+    display: block;
+   }
+   .Info__text-team-box {
+    max-width: none;
+   }
+   .Info__text-team {
+    padding: 0;
+   }
+   .info_calendar_text {
+    padding-bottom: 20px;
+   }
+   }
+ 
   
 </style>
